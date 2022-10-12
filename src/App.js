@@ -65,11 +65,13 @@ function App() {
   };
 
   const copyHandler = () => {
-    navigator.clipboard.writeText(link);
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2500);
+    if (link !== "") {
+      navigator.clipboard.writeText(link);
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 2500);
+    }
   };
   const errorMsg = isTouched && isInvalid;
 
