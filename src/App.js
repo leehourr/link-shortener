@@ -91,7 +91,7 @@ function App() {
   if (link !== "" && !isInvalid) {
     isLink = link;
   } else {
-    isLink = "click to copy to clipboard";
+    isLink = "copy to clipboard";
   }
 
   return (
