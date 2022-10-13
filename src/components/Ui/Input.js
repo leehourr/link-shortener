@@ -17,6 +17,7 @@ const Input = React.forwardRef(
           autoComplete={autoComplete}
           onChange={onChange}
           className={className}
+          required
           ref={ref}
           placeholder={placeholder}
         />
