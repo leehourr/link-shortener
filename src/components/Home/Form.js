@@ -36,7 +36,7 @@ export const Form = (props) => {
   let btnDisbale;
   disabledBtn
     ? (btnDisbale =
-        "group w-full flex justify-center py-4 px-5 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500")
+        "bg-cyan-500 shadow-lg shadow-cyan-400/50 group w-full flex justify-center py-4 px-5 border border-transparent text-lg font-medium rounded-md text-white hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400")
     : (btnDisbale =
         "cursor-not-allowed group disabled w-full flex justify-center py-4 px-5 border border-transparent text-lg font-medium rounded-md text-black bg-gray-300 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500");
 
@@ -102,14 +102,14 @@ export const Form = (props) => {
         </div>
       )}
       {copied && (
-        <div className="px-5 py-3 flex bg-green-100 items-center text-green-600 absolute w-full top-0 left-0 right-0 z-10 tran duration-75 animate-bounce ">
+        <div className="px-5 py-3 flex bg-cyan-400 items-center text-cyan-800 absolute w-full top-0 left-0 right-0 z-10 tran duration-75 animate-bounce ">
           <img src={Tick} className="h-5 w-5 mr-2" alt="copied" />
           Awesome! Your link has been copied.
         </div>
       )}
       <div className="min-h-screen flex items-center justify-center bg-gray-800 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-lg w-full space-y-8">
-          <h2 className="mt-6 text-left text-3xl font-extrabold text-green-300">
+          <h2 className="mt-6 text-left text-3xl font-extrabold text-cyan-400">
             Short URL Generator
           </h2>
           <p className="mt-2 text-left text-1xl text-gray-400">
